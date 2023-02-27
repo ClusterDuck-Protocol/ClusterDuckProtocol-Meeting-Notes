@@ -3,6 +3,11 @@
   - Must be bundle-able (one ack for many messages)
   - There is already a topic for acks, but there needs to be a format
   - Should developers have access to setting messages as ackable?
+  - Pitfalls
+    - a large mesh can be flooded with ACK messages
+      - what is the optimal frequency of messages be with ACKs included?
+    - how long should Ducks wait for an ACK
+      - long times means more RAM
 * Displays
   - Should have a uniform API for printing to display
   - Curtail the ability to customize the display?
